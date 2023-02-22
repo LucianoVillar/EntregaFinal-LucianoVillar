@@ -76,13 +76,10 @@ rowProduct.addEventListener('click', e => {
 	}
 });
 
-
 //Eliminar productos LS del carrito
 function limpiarLS(){ 
 
 	localStorage.clear();
-
-
 };
 
 // Funcion para mostrar  HTML
@@ -97,15 +94,8 @@ const showHTML = () => {
 		cartTotal.classList.remove('hidden');
 	}
 
-	
 
-	
-
-
-
-
-
-	// Limpiar HTML
+// Limpiar HTML
 	rowProduct.innerHTML = '';
 
 	let total = 0;
@@ -154,7 +144,7 @@ const showHTML = () => {
 
 
 
-	//Alerta quitar producto
+//Alerta quitar producto
 
 
 	btnQuitar = document.getElementsByClassName("icon-close");
@@ -176,7 +166,6 @@ const showHTML = () => {
 
 };
 
-
 //Limpiar Productos
 
 function limpiarCarrito () {
@@ -187,13 +176,9 @@ function limpiarCarrito () {
 
 
 //set item
-
 const saveLocal = () => {
     localStorage.setItem("carrito", JSON.stringify(allProducts));
  }
-
-
-
 
 //Toastify
 //Finalizar compra de carrito
@@ -248,10 +233,6 @@ function alerta1(){
 		  background: "linear-gradient(to right, #00b09b, #96c93d)",
 		},
 	  }).showToast();
-
-
-
-
 
 //LOCAL STORAGE
 
