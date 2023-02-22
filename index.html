@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIfeGame</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">
+       <div class="imagen-nombre">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="logo-tienda">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
+          </svg>
+          
+       </div>
+        <h1 class="nombre-empresa">LIfeGame</h1>
+    </a>
+    <nav>
+        <a href="" class="nav-link">Inicio</a>
+        <a href="proponerJuego.html" class="nav-link">Reservar Juego</a>
+    </nav>
+    <div class="container-icon">
+        <div class="container-cart-icon">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-cart"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+            />
+        </svg>
+        <div class="count-products">
+            <span id="contador-productos">0</span>
+        </div>
+        </div>
+        <div class="container-cart-products hidden-cart">
+            <div class="row-product">
+                <div class="cart-product">
+                    
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon-close"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="cart-total">
+                <h3>Total:</h3>
+                <span class="total-pagar">$0</span>
+                <button id="btn-comprar">Terminar la compra</button>
+            </div>
+            <p class="cart-empty"></p>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="http://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Counter Strike: Global Offensive</h2>
+                <p class="price">$0 </p>
+                <button  class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://www.leagueoflegends.com/static/open-graph-2e582ae9fae8b0b396ca46ff21fd47a8.jpg" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>League of Legends</h2>
+                <p class="price">$0 </p>
+                <button  class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://as01.epimg.net/meristation/imagenes/2019/11/18/trucos/1574079348_118792_1574079558_noticia_normal.jpg" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Age of Empires II</h2>
+                <p class="price">$105</p>
+                <button  class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/TAVBD2EG4FE7DLKMIBFMGD3GXQ.jpeg" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Fifa 23</h2>
+                <p class="price">$1200</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.ytimg.com/vi/IYB1sFvujXI/maxresdefault.jpg" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>F1 22</h2>
+                <p class="price">$1040</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://images.ctfassets.net/j95d1p8hsuun/29peK2k7Ic6FsPAVjHWs8W/06d3add40b23b20bbff215f6979267e8/NW_OPENGRAPH_1200x630.jpg" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>New World</h2>
+                <p class="price">$399</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/108600/capsule_616x353.jpg?t=1667832656" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Project Zomboid</h2>
+                <p class="price">$287</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/962130/capsule_616x353.jpg?t=1669729959" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Grounded</h2>
+                <p class="price">$535</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://as01.epimg.net/meristation_en/imagenes/2022/08/04/news/1659565398_650256_1659565555_noticia_normal.jpg" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>NBA 2k23</h2>
+                <p class="price">$874</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2021/2/23/lw2mnvl4myz7br8okktn/valorant" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Valorant</h2>
+                <p class="price">$0 </p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://static.13.cl/7/sites/default/files/esports/articulos/field-image/portadaamong_2.jpg" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Among Us</h2>
+                <p class="price">$84</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DyingLight2StayHuman_Techland_S3_2560x1440-f1dcd15207f091674615ccb4bd9dc3c7" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Dying Light 2 Stay Human</h2>
+                <p class="price">$999</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/phvVT0qZfcRms5qDAk0SI3CM.png" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Elden Ring</h2>
+                <p class="price">$1540</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/capsule_616x353.jpg?t=1671485009" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Red Dead Redemtion II</h2>
+                <p class="price">$527</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hogwarts-legacy-1-1601466696.jpg?crop=0.75xw:1xh;center,top&resize=1200:*" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Hogwarts Legacy (Pre-compra)</h2>
+                <p class="price">$1899</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://as01.epimg.net/meristation/imagenes/2022/01/27/avances/1643306830_257405_1643312921_noticia_normal.jpg" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Sea of Thieves</h2>
+                <p class="price">$399</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1085660/capsule_616x353.jpg?t=1671639469" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Destiny 2 </h2>
+                <p class="price">$0 </p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1332010/capsule_616x353.jpg?t=1670349423" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Stray</h2>
+                <p class="price">$519</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: "Lato";
+    color: #333;
+    
+}
+
+
+
+header {
+    display: flex;
+    padding: 30px 0 40px 0px;
+    justify-content: space-between;
+    align-items: center;
+   background-color: beige;
+    
+}
+
+.price {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+}
+.logo-tienda{
+    height: 50px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.imagen-nombre:hover{
+    color: lightcoral;
+}
+
+.nombre-empresa:hover{
+    color: lightcoral;
+}
+a{
+    text-decoration: none;
+    color: #333;
+    
+}
+
+.nav-link{
+    font-weight: 300;
+    padding-right: 10px; 
+    }
+
+nav a:hover{
+    color: lightcoral;
+    
+}
+
+.container-icon{
+    position: relative;
+}
+
+.producto {
+    border-radius: 10px;
+    background-color: beige;
+}
+.producto:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.producto button {
+    border: none;
+    background: none;
+    background-color: black;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    }
+    
+    .producto button:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.listaProductos {
+
+    display: grid;
+    gap: 20px;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+
+.producto {
+
+    border-radius: 10px;
+    background-color: beige;
+    margin: 0.5 rem;
+
+}
+
+.carrito {
+
+    margin-top: 2rem;
+
+}
+
+table tr th,
+table tr td
+{
+
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1.5rem;
+
+}
+
+.ocultar {
+
+    display: none;
+
+}
+.visible {
+
+    display: block;
+
+}
