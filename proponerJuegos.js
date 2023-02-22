@@ -185,7 +185,7 @@ for(const producto of productos) {
     p.innerHTML = `$${producto.precio}`;
 
     const button = document.createElement("button");
-    button.innerHTML = "Proponer Juegos";
+    button.innerHTML = "Reservar Juego";
 
     button.addEventListener("click", () => {
 
